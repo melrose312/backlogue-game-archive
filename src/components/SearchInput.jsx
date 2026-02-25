@@ -1,4 +1,6 @@
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
 
 function SearchInput() {
   return (
@@ -12,7 +14,7 @@ function SearchInput() {
               placeholder="Search 100,000+ games"
             />
             <button>
-              <FontAwesomeIcon icon="fa-solid fa-magnifying-glass"/>
+              <FontAwesomeIcon icon="fa-solid fa-magnifying-glass" />
             </button>
           </div>
         </div>
@@ -22,3 +24,4 @@ function SearchInput() {
 }
 
 export default SearchInput;
+

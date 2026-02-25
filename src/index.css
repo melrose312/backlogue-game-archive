@@ -162,89 +162,23 @@ nav {
   background-color: #0f1115;
 }
 
-.games {
+.new {
   display: flex;
   flex-wrap: wrap;
-  margin: 0 -24px;
 }
 
-.game {
+.new__release {
   width: 25%;
-  padding: 24px;
-  transition: all 300ms ease;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+  padding: 16px;
 }
 
-.game:hover {
-  transform: translateY(-4px);
-}
-
-.game__img {
-  max-height: 320px;
-  max-width: 250px;
-  transition: all 300ms ease;
-}
-
-.game__img--skeleton {
+.new__release--img {
   width: 100%;
-  max-width: 250px;
-  height: 320px;
-  background-color: #1e1e1e;
-  margin-bottom: 8px;
+  object-fit: cover;
 }
 
-.skeleton {
-  background-color: #1e1e1e !important;
-  margin-bottom: 8px;
+.new__release--title {
+  font-size: clamp(14px, 1.5vw, 16px);
+  font-weight: 600;
+  margin-top: 4px;
 }
-
-.game__title--skeleton {
-  height: 21px;
-  width: 100%;
-  max-width: 250px;
-}
-
-.game__rating--skeleton {
-  width: 100px;
-  height: 19px;
-}
-
-.game__price--skeleton {
-  width: 200px;
-  height: 19px;
-}
-
-.game__link {
-  color: #4f7cff;
-}
-
-.game__img--wrapper {
-  margin-bottom: 8px;
-  border-radius: 8px;
-  overflow: hidden;
-  display: flex;
-  height: auto;
-}
-
-.game__img--wrapper img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-}
-
-.game__title {
-  font-size: 20px;
-  margin-bottom: 8px;
-}
-
-.game__title--link {
-  color: white;
-  text-decoration: none;
-}
-
-/* .game__ratings {
-  margin-bottom: 8px;
-  color: #fabf2a;
-} */
