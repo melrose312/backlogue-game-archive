@@ -8,9 +8,9 @@ export async function fetchNewReleases() {
     const formatDate = (d) => d.toISOString().split("T")[0];
 
     const { data } = await axios.get(
-        `https://api.rawg.io/api/games?key=${process.env.REACT_APP_RAWG_API_KEY}&dates=${formatDate(fourteenDaysAgo)},${formatDate(today)}&ordering=-released&page_size=16`
+        `https://api.rawg.io/api/games?key=${process.env.REACT_APP_RAWG_API_KEY}&dates=${formatDate(fourteenDaysAgo)},${formatDate(today)}&ordering=-released&page_size=30`
     );
-    return data.results;
+    return data.results.filter((game) => game.background_image).slice(0, 16);
 }
 
 

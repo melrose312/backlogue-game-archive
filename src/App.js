@@ -1,15 +1,11 @@
-import Nav from "./components/Nav";
-import SearchInput from "./components/SearchInput";
-import NewReleases from "./components/ui/NewReleases";
+
 import "./index.css";
+import Home from "./pages/Home";
 
 function App() {
   return (
     <div className="App">
-      <><Nav />
-      <SearchInput />
-      <NewReleases />
-      </>
+      <Home />
     </div>
   );
 }
