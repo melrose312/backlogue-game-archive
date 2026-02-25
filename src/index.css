@@ -158,28 +158,33 @@ nav {
 
 /* NEW RELEASES */
 
-#new__releases {
+#new__releases,
+#search__results {
   padding: 4vw 0;
   background-color: #0f1115;
   flex: 1;
 }
 
-.new {
+.new,
+.game__card {
   display: flex;
   flex-wrap: wrap;
 }
 
-.new__release {
+.new__release,
+.game__info {
   width: 25%;
   padding: 16px;
 }
 
-.new__release--img {
+.new__release--img,
+.game__img {
   width: 100%;
   object-fit: cover;
 }
 
-.new__release--title {
+.new__release--title,
+.game__title {
   font-size: clamp(14px, 1.5vw, 16px);
   font-weight: 600;
   margin-top: 4px;

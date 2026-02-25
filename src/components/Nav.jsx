@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import Backlog from '../assets/backlogue-logo.png'
 
 function Nav() {
@@ -10,7 +11,7 @@ function Nav() {
           </div>
           <div className="nav__links">
             <ul>
-              <li><a href="#" className="nav__link">Home</a></li>
+              <li><Link to="/">Home</Link></li>
               <li><a href="#" className="nav__link">About</a></li>
               <li><a href="#" className="nav__link">Collections</a></li>
             </ul>

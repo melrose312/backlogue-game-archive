@@ -9,12 +9,10 @@ function NewReleases() {
   useEffect(() => {
     async function loadNew() {
       const releasesData = await fetchNewReleases();
-      console.log(releasesData);
       setNewReleases(releasesData);
     }
     loadNew();
   }, [])
-  console.log(releases);
 
   return (
     <section id="new__releases">
